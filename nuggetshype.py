@@ -82,7 +82,7 @@ if response.status_code == 200:
                     num_iterations = total_duration // interval
 
                     for _ in range(num_iterations):
-                        send_message()
+                        send_keepalive()
                         time.sleep(interval)
 
             logging.info(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} [INFO]: Script executed successfully.")

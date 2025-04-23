@@ -63,7 +63,7 @@ def is_denver_broncos_playing(api_url):
         return False
 
 # Check if the Denver Broncos are playing
-api_endpoint = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/schedule?season=2023"
+api_endpoint = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/schedule?season=2025"  # Will need to change this every year based on season
 if is_denver_broncos_playing(api_endpoint):
     logging.info(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} [INFO]: The Denver Broncos are playing today.")
 
